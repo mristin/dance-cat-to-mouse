@@ -66,6 +66,9 @@ Please let us know by `creating an issue`_ if you tested the game with other mat
 Acknowledgments
 ===============
 Bell sound from: https://opengameart.org/content/pleasing-bell-sound-effect
+
 Barking sound from: https://opengameart.org/content/dog-bark
+
 Victory sound from: https://opengameart.org/content/victory-4
+
 Cat, dog and mouse from: https://opengameart.org/content/lpc-rat-cat-and-dog
