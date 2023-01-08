@@ -44,7 +44,16 @@ def call_and_report(
     else:
         print(f"Executing: {cmd_str}")
 
-    exit_code = subprocess.call(cmd, cwd=str(cwd) if cwd is not None else None, env=env)
+    try:
+        exit_code = subprocess.call(
+            cmd, cwd=str(cwd) if cwd is not None else None, env=env
+        )
+    except FileNotFoundError:
+        print(
+            f"Failed to execute as the file could not be found : {cmd_str}",
+            file=sys.stderr,
+        )
+        return 1
 
     if exit_code != 0:
         print(

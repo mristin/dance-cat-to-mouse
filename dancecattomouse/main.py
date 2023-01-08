@@ -145,7 +145,8 @@ class InitialMap:
     @require(lambda data: len(data) == LEVEL_HEIGHT)
     @require(lambda data: all(len(row) == LEVEL_WIDTH for row in data))
     @require(
-        lambda data: sum(1 for row in data for character in row if character == "c") == 1,
+        lambda data: sum(1 for row in data for character in row if character == "c")
+        == 1,
         "Exactly one cat expected",
     )
     # fmt: off
